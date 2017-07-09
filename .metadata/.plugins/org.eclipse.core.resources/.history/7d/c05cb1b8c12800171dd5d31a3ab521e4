@@ -1,0 +1,13 @@
+//章节8.6                     生产者消费者问题
+package ep8_6;
+
+/*
+ * 生产者类，采用线程，模拟生产者的行为*/
+class Producer {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

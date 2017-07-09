@@ -1,0 +1,10 @@
+//章节8.6                     生产者消费者问题
+package ep8_6;
+
+/*
+ * 消费者，采用线程，模拟消费者行为*/
+
+class Consumer {
+	private Warehouse warehouse;          //消费者获取产品的仓库
+	private boolean running=false;         //是否需要结束线程的标志位
+}

@@ -1,0 +1,15 @@
+//章节8.5            线程join
+package ep8_5;
+
+/**
+ * 线程的结合
+ * 当一个线程需要等待另一个线程结束时，叫做线程的结合
+ */
+public class JoinThread {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

@@ -1,0 +1,100 @@
+//章节8.7.3            使用字符串类String
+package ex9_9_1;
+
+public class UsingString {
+	
+	/*查找子字符串*/
+	public static void testFindStr(String str) {
+		//返回子字符串的最先出现的位置，如果不存在，返回负数
+		System.out.println("str.indexOf(\"is\")="+str.indexOf("is"));
+		//可以给indexOf方法设置参数，指定查找的起始位置
+		System.out.println("str.indexOf(\"is\",4)="+str.indexOf("is",4));
+		//返回子字符串在字符串中的最后出现的位置，如果不存在，返回负数
+		System.out.println("str.lastIndexOf(\"is\")="+str.indexOf("is"));
+		//可以给lastIndexOf方法设置参数，指定查找的结束位置
+		System.out.println("str.lastIndexOf(\"is\",1)="+str.lastIndexOf("is",4));
+	}
+
+	/*截取子字符串*/
+	public static void testSubStr(String str) {
+		//substring方法截取字符串，可以指定截取的起始位置和终止位置
+		//默认终止位置为字符串末尾
+		System.out.println("str.substring(2)="+str.substring(2));
+		System.out.println("str.substring(2,9)="+str.substring(2,9));
+	}
+	
+	/*替换字符串*/
+	public static void testReplaceStr(String str) {
+		//将字符串中的某个字符替换成另一个字符
+		System.out.println("str.replace('i','I')="+str.replace('i', 'I'));
+		//将字符串中的某个子字符串替换成另一个字符串
+		System.out.println("str.replaceAll(\"is\",\"IS\")="+str.replaceAll("is", "IS"));
+		//将字符串中的某个子字符串的第一个替换成另一个字符串
+		System.out.println("str.replaceFirst(\"is\",\"IS\")="+str.replaceFirst("is", "IS"));
+	}
+	
+	/*转换大小写*/
+	public static void testToUpperOrLower(String str) {
+		//将字符全部变成大写形式
+		System.out.println("str.toUpperCase()="+str.toUpperCase());
+		//将字符全部变成大写形式
+		System.out.println("str.toLowerCase()="+str.toLowerCase());
+	}
+	
+	/*获取字符串中某个位置上的字符*/
+	public static void testChatAt(String str) {
+		//返回字符串中某个位置上的字符
+		System.out.println("str.charAt(2)="+str.charAt(2));
+		//将字符串转换成字符数组，数组长度为字符串的长度
+		System.out.println(str.toCharArray());
+	}
+	
+	/*比较字符串大小*/
+	public static void testCompareStr(String str) {
+		//compareTo方法比较两个字符串的大小，比较规则：字典序，前者大，返回正数；后者大，返回负数
+		System.out.println("str.compareTo(\"I am in Beijing\")="+str.compareTo("I am in Beijing"));
+		//compareToIgnoreCase在比较时忽略字符串的大小写，认为同一字符的大小写相等
+		System.out.println("str.compareToIgnoreCase(\"I am in Beijing\")="+str.compareToIgnoreCase("I am in Beijing"));
+	}
+	
+	/*比较字符串是否相等*/
+	public static void testEqualsStr(String str) {
+		//比较字符串的值是否相等
+		System.out.println("str.equals(\"I am in Beijing\")="+str.equals("I am in Beijing"));
+		//比较字符串的值时不区分大小写
+		System.out.println("str.equalsIgnoreCase(\"I am in Beijing\")="+str.equalsIgnoreCase("I am in Beijing"));
+		//判断字符串是否以某个子字符串开始
+		System.out.println("str.startsWith(\"Th\")="+str.startsWith("Th"));
+		//判断字符串是否以某个子字符串结束
+		System.out.println("str.startsWith(\"t!\")="+str.startsWith("t!"));
+	}
+	
+	/*String类也可根据正则表达式操作字符串，包括字符串匹配、替换和分解*/
+	
+	public static void testRegex() {
+		String str="aab         aaa   bb     ab";
+		String pattern1="^[a-zA-Z| ]*$";            //该正则表达式表示包含任意多个英文字母或者空格
+		System.out.println("用正则表达式匹配成功？"+str.matches(pattern1));
+		System.out.println(str.replaceAll("\\s{2, }"," "));           //将字符串中的连续空格换成一个空格
+		System.out.println(str.replaceFirst("\\s{2, }"," "));           //将字符串中第一个连续空格换成一个空格
+		
+		//分解字符串，按空格分解，多个连续的空格当做一个空格
+		String[] ss=str.split("\\s{1, }");
+		System.out.println("用正则表达式按空格分解：");
+		for(int i=0;i<ss.length;i++)
+			System.out.println(ss[i]);
+		
+		//限制分解后的数组大小
+		System.out.println("用正则表达式按空格分解，指定最大分解段数为3：");
+		ss=str.split("\\s{1, }",3);
+		for(int i=0;i<ss.length;i++)
+			System.out.println(ss[i]);
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

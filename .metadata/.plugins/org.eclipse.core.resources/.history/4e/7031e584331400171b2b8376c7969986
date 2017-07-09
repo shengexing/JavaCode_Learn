@@ -1,0 +1,20 @@
+//章节7.8              读文件示例
+package ep7_8;
+
+/**
+ * 多种方式读文件内容
+ * 按字节读取文件内容、按字符读取文件内容、按行读取文件内容、随机读取文件内容
+ */
+
+public class ReadFromFile {
+	/**
+	 * 以字节为单位读取文件，常用于读二进制文件，如图片、声音、影像等文件
+	 * @param fileName 文件的名
+	 */
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

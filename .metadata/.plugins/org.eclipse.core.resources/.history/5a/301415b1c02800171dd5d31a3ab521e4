@@ -1,0 +1,11 @@
+//章节8.6                     生产者消费者问题
+package ep8_6;
+
+public class Product {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

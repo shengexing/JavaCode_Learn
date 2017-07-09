@@ -1,0 +1,7 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.jdt.ui.presentation\tTorg.eclipse.debug.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.editors.textfont
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.debug.ui.consoleFont=1|\u65B9\u6B63\u8212\u4F53|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-122|3|2|1|2|\u65B9\u6B63\u8212\u4F53;
+org.eclipse.jdt.ui.editors.textfont=1|\u534E\u6587\u65B0\u9B4F|14.25|1|WINDOWS|1|-19|0|0|0|700|0|0|0|-122|3|2|1|2|\u534E\u6587\u65B0\u9B4F;

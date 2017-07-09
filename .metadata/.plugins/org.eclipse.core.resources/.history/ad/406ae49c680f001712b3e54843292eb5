@@ -1,0 +1,25 @@
+//章节13.4.4                   删除文件
+package ex13_4_4;
+
+import java.io.File;
+
+public class DeleteFile {
+	
+	public void delFile(String fileDerecatorAndName) {
+		try {
+			//以要删除的文件或文件夹名为参数，创建File对象
+			File deletedFile=new File(fileDerecatorAndName);
+			//调用File类的delete方法删除文件
+			deletedFile.delete();
+		} catch(Exception ex) {
+			System.out.println("删除文件错误");
+			ex.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

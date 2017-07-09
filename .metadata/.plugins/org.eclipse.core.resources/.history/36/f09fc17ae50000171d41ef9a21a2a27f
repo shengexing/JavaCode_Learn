@@ -1,0 +1,56 @@
+//章节8.7.3            使用字符串类String
+package ex9_9_1;
+
+public class UsingString {
+	
+	/*查找子字符串*/
+	public static void testFindStr(String str) {
+		//返回子字符串的最先出现的位置，如果不存在，返回负数
+		System.out.println("str.indexOf(\"is\")="+str.indexOf("is"));
+		//可以给indexOf方法设置参数，指定查找的起始位置
+		System.out.println("str.indexOf(\"is\",4)="+str.indexOf("is",4));
+		//返回子字符串在字符串中的最后出现的位置，如果不存在，返回负数
+		System.out.println("str.lastIndexOf(\"is\")="+str.indexOf("is"));
+		//可以给lastIndexOf方法设置参数，指定查找的结束位置
+		System.out.println("str.lastIndexOf(\"is\",1)="+str.lastIndexOf("is",4));
+	}
+
+	/*截取子字符串*/
+	public static void testSubStr(String str) {
+		//substring方法截取字符串，可以指定截取的起始位置和终止位置
+		//默认终止位置为字符串末尾
+		System.out.println("str.substring(2)="+str.substring(2));
+		System.out.println("str.substring(2,9)="+str.substring(2,9));
+	}
+	
+	/*替换字符串*/
+	public static void testReplaceStr(String str) {
+		//将字符串中的某个字符替换成另一个字符
+		System.out.println("str.replace('i','I')="+str.replace('i', 'I'));
+		//将字符串中的某个子字符串替换成另一个字符串
+		System.out.println("str.replaceAll(\"is\",\"IS\")="+str.replaceAll("is", "IS"));
+		//将字符串中的某个子字符串的第一个替换成另一个字符串
+		System.out.println("str.replaceFirst(\"is\",\"IS\")="+str.replaceFirst("is", "IS"));
+	}
+	
+	/*转换大小写*/
+	public static void testToUpperOrLower(String str) {
+		//将字符全部变成大写形式
+		System.out.println("str.toUpperCase()="+str.toUpperCase());
+		//将字符全部变成大写形式
+		System.out.println("str.toLowerCase()="+str.toLowerCase());
+	}
+	
+	/*获取字符串中某个位置上的字符*/
+	public static void testChatAt(String str) {
+		//返回字符串中某个位置上的字符
+		System.out.println("str.charAt(2)="+str.charAt(2));
+		//将字符串转换成字符数组，数组长度为字符串的长度
+		System.out.println(str.toCharArray());
+	}
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

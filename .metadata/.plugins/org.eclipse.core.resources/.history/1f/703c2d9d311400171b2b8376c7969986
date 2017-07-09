@@ -1,0 +1,10 @@
+package ep7_8;
+
+public class ReadFromFile {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

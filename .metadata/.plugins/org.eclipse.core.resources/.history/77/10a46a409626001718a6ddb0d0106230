@@ -1,0 +1,38 @@
+//章节8.4                 线程的协作
+package ep8_4;
+
+import java.util.Vector;
+
+/**
+ * 线程间的协作
+ */
+public class WaitNofity {
+	
+	static class Printer extends Thread {
+		Vector task=new Vector();
+		boolean running=false;
+		
+		public void start() {
+			this.running=true;
+			super.start();
+		}
+		
+		public void run() {
+			try {
+				System.out.println("Printer begin!");
+				while(running) {
+					synchronized(this) {
+						while((task.size()==0)&&running) {
+							//如果任务列表为空，而线程还允许运行，则等待任务
+						}
+					}
+				}
+			}
+		}
+	}
+	/*打印信息的类，是一个线程*/
+	public static void main(String[] args) {
+		
+	}
+
+}

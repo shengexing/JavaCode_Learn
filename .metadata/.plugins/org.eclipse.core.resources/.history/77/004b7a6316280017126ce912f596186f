@@ -1,0 +1,42 @@
+//章节8.5            线程join
+package ep8_5;
+
+/**
+ * 线程的结合
+ * 当一个线程需要等待另一个线程结束时，叫做线程的结合
+ */
+
+public class JoinThread {
+	/*自定义线程类*/
+	static class ThreadA extends Thread {
+		private int ID=0;            //线程的ID
+		private int whileTimes=0;            //线程运行时循环的次数
+		
+		public ThreadA(int id, int times) {
+			this.ID=id;
+			this.whileTimes=times;
+		}
+		
+		public void run() {
+			System.out.println("ThreadA-"+this.ID+" begin!");
+			int i=0;
+			try {
+				//连续循环whileTimes次
+				while(i<this.whileTimes) {
+					System.out.println("ThreadA-"+this.ID+": "+i++);
+					//sleep方法将当前线程休眠
+					Thread.sleep(200);
+				}
+			} catch(InterruptedException e) {
+				
+			}
+			System.out.println("ThreadA-"+this.ID+"end!");
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

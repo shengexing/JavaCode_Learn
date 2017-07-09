@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将包“ep07_2”重命名为“ep7_2”&#x0D;&#x0A;－ 原始项目：“Chapter13”&#x0D;&#x0A;－ 原始元素：“Chapter13/src/ep07_2”&#x0D;&#x0A;－ 重命名的元素：“Chapter13/src/ep7_2”&#x0D;&#x0A;－ 更新对已重构元素的引用&#x0D;&#x0A;－ 更新注释和字符串中出现的文本" description="重命名包“ep07_2”" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;ep07_2" name="ep7_2" qualified="false" references="true" stamp="1490501951652" textual="false" version="1.0"/>
+</session>

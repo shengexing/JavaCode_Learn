@@ -1,0 +1,8 @@
+//章节8.6                     生产者消费者问题
+package ep8_6;
+
+/*
+ * 消费者，采用线程，模拟消费者行为*/
+public class Consumer {
+
+}

@@ -1,0 +1,11 @@
+//章节7.5                                移动文件和目录
+package ep7_5;
+
+public class MoveFileUtil {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

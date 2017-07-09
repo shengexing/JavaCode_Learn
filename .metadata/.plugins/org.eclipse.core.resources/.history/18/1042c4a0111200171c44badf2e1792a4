@@ -1,0 +1,16 @@
+//章节7.5                                移动文件和目录
+package ep7_5;
+
+public class MoveFileUtil {
+	/**
+	 * 移动单个文件，不覆盖已存在的目标文件
+	 * @param srcFileName待移动的源文件名
+	 * @param destFileName目标文件名
+	 * @return 文件移动成功返回true，否则返回false
+	 */
+
+	public static void main(String[] args) {
+		
+	}
+
+}

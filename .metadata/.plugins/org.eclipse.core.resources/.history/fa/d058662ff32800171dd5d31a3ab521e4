@@ -1,0 +1,6 @@
+//章节8.6                     生产者消费者问题
+package ep8_6;
+
+public class Consumer {
+
+}

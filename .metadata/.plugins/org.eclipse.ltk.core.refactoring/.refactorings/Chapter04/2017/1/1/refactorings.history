@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将包“ex4_6_5”重命名为“ex4_6_6”&#x0D;&#x0A;－ 原始项目：“Chapter4”&#x0D;&#x0A;－ 原始元素：“Chapter4/src/ex4_6_5”&#x0D;&#x0A;－ 重命名的元素：“Chapter4/src/ex4_6_6”&#x0D;&#x0A;－ 更新对已重构元素的引用&#x0D;&#x0A;－ 更新注释和字符串中出现的文本" description="重命名包“ex4_6_5”" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;ex4_6_5" name="ex4_6_6" qualified="false" references="true" stamp="1483361607555" textual="false" version="1.0"/>
+</session>
