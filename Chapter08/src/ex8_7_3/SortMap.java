@@ -22,7 +22,7 @@ public class SortMap {
 	}
 
 	public static void main(String[] args) {
-		Map myMap=new LinkedHashMap();
+		Map myMap=new HashMap();
 		myMap.put(new Integer(5), "aaa");
 		myMap.put(new Integer(8), "bbb");
 		myMap.put(new Integer(4), "ccc");
